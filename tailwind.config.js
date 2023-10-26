@@ -3,6 +3,12 @@ module.exports = {
   content: ["./src/**/*.{html,js,jsx,ts,tsx}"],
   theme: {
     extend: {},
+    "fontFamily": {
+      "montserrat": "Montserrat"
+    },
+    fontSize: {
+      'title-small': ['14px', '20px']
+    },
     colors: {
       'primary': {
         600: '#2E3440',
