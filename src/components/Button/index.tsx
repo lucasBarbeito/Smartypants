@@ -24,8 +24,8 @@ export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement>, Va
 
 }
 
-const Button = ({variant, name}:ButtonProps) => {
-    return <button className={buttonVariant({ variant })}>{name}</button>;
+const Button = ({variant, ...rest}:ButtonProps) => {
+    return <button className={buttonVariant({variant})} {...rest}/>
 }
 
 export default Button
