@@ -14,21 +14,22 @@ const meta: Meta<typeof Button> ={
     }
 }
 
+type ButtonProps = React.ComponentProps<typeof Button> & { name: string; };
+
 export default meta
 
-type Story = StoryObj<typeof Button>
+export const Primary: StoryObj<ButtonProps> = {
+    render: (args) => (<Button variant={'primary'} name={args.name}></Button>
+)}
 
-export const Default: Story = {
-    name:'Default',
-    render: (args) => <Button {...args}>Button</Button>
-}
+Primary.args = {
+    name: 'Primary',
+};
 
-export const Primary: Story = {
-    name:'Primary',
-    render: (args) => <Button variant={'primary'} {...args}>Button</Button>
-}
+export const Secondary: StoryObj<ButtonProps> = {
+    render: (args) => (<Button variant={'secondary'} name={args.name} ></Button>
+)}
 
-export const Secondary: Story = {
-    name:'Secondary',
-    render: (args) => <Button variant={'secondary'} {...args}>Button</Button>
-}
+Secondary.args = {
+    name: 'Secondary',
+};
