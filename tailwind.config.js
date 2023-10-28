@@ -7,7 +7,8 @@ module.exports = {
       "montserrat": "Montserrat"
     },
     fontSize: {
-      'title-small': ['14px', '20px']
+      'title-small': ['14px', '20px'],
+      'headline-large': ['32px', '40px']
     },
     colors: {
       'primary': {
