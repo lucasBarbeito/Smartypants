@@ -2,7 +2,7 @@ import {cva, VariantProps} from "class-variance-authority";
 import cancel from "../Icons/Cancel.svg"
 import check from "../Icons/Check.svg"
 
-const topicVariant = cva([
+const subtopicVariant = cva([
     'rounded-lg',
     'bg-primary-400',
     'text-body-large', 
@@ -26,17 +26,17 @@ const topicVariant = cva([
     }
 })
 
-export interface TopicProps extends VariantProps<typeof topicVariant>{
+export interface SubtopicProps extends VariantProps<typeof subtopicVariant>{
     subtopicName: string
 }
 
-const Topic = ({variant, subtopicName}:TopicProps) => {
+const Subtopic = ({variant, subtopicName}:SubtopicProps) => {
     return (
-    <button className={topicVariant({variant})}>
+    <button className={subtopicVariant({variant})}>
         <h1>{subtopicName}</h1>
         {variant === 'failed' && (<img src={cancel} alt="Cancel" />)}
         {variant === 'completed' && (<img src={check} alt="Check" />)}
     </button>)
 }
 
-export default Topic
+export default Subtopic

@@ -1,9 +1,9 @@
 import {Meta, StoryObj} from "@storybook/react";
-import Topic from "./index";
+import Subtopic from "./index";
 
-const meta: Meta<typeof Topic> ={
-    title:'Topic',
-    component:Topic,
+const meta: Meta<typeof Subtopic> ={
+    title:'Subtopic',
+    component:Subtopic,
     tags: ['autodocs'],
     argTypes:{
         variant:{
@@ -16,10 +16,10 @@ const meta: Meta<typeof Topic> ={
 
 export default meta
 
-type Story = StoryObj<typeof Topic>
+type Story = StoryObj<typeof Subtopic>
 
 export const Pending: Story = {
-    render: (args) => (<Topic {...args}></Topic>
+    render: (args) => (<Subtopic {...args}></Subtopic>
 )}
 
 Pending.args = {
@@ -28,7 +28,7 @@ Pending.args = {
 };
 
 export const Failed: Story = {
-    render: (args) => (<Topic {...args}></Topic>
+    render: (args) => (<Subtopic {...args}></Subtopic>
 )}
 
 Failed.args = {
@@ -37,7 +37,7 @@ Failed.args = {
 };
 
 export const Completed: Story = {
-    render: (args) => (<Topic {...args}></Topic>
+    render: (args) => (<Subtopic {...args}></Subtopic>
 )}
 
 Completed.args = {
