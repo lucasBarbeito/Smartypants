@@ -2,7 +2,7 @@ import {ButtonHTMLAttributes} from 'react'
 import {cva, VariantProps} from "class-variance-authority";
 
 
-const buttonVariant = cva(['rounded-lg', 'w-full', 'justify-center', 'text-title-small', 'text-greyscale-500', 'py-2'],{
+const buttonVariant = cva(['rounded-lg', 'w-full', 'justify-center', 'text-title-small', 'text-greyscale-500', 'py-2', 'w-1/2'],{
     variants:{
         variant:{
             primary:[
