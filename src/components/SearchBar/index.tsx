@@ -9,7 +9,7 @@ const searchBarVariant = cva([
     'w-full',
     'py-2',
     'px-4',
-    'flex',
+    'flex justify-between',
     'items-center',
     'gap-4'
     ],{
