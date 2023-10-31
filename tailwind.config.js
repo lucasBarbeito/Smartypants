@@ -11,6 +11,7 @@ module.exports = {
     fontSize: {
       'title-small': ['14px', '20px'],
       'headline-large': ['32px', '40px'],
+      'headline-medium': ['28px', '36px'],
       'body-small': ['10px', '16px'],
       'body-large': ['16px', '24px'],
     },
@@ -39,6 +40,9 @@ module.exports = {
       addUtilities({
         '.no-scrollbar::-webkit-scrollbar': {
             'display': 'none'
+        },
+        '.no-scrollbar': {
+          'scrollbar-width': 'none'
         }
       })
     })

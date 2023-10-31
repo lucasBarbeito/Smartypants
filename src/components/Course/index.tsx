@@ -7,7 +7,7 @@ import media from "../../Media.svg"
 
 const courseVariant = cva([
     'text-greyscale-500',
-    'w-96',
+    'w-48',
     'truncate'
 ],{
     variants:{
