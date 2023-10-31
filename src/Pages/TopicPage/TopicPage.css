@@ -1,0 +1,12 @@
+/*body {*/
+/*    background: #61dafb;*/
+/*}*/
+
+.fakeVideo {
+    display: flex;
+    width: 364px;
+    height: 188px;
+    justify-content: center;
+    align-items: center;
+    background: aqua;
+}

@@ -8,6 +8,10 @@ const footerVariant = cva([
     'px-4',
     'flex',
     'justify-evenly',
+    'fixed', // Fixed positioning
+    'bottom-0', // Positioned at the bottom
+    'left-0', // Positioned at the left
+    'z-10', // Z-index to ensure it's above other elements
     ],{
     variants:{
         variant:{
