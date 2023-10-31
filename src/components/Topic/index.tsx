@@ -38,8 +38,8 @@ const Topic = ({variant, topicName, totalSuptopics, totalSuptopicsCompleted}:Top
         <h1>{topicName}</h1>
         <div className="flex justify-center">
             {(variant === 'expanded' || variant === 'collapsed') && (<h1>({totalSuptopicsCompleted}/{totalSuptopics})</h1>)}
-            {variant === 'expanded' && (<img src={expand} alt="Expand" />)}
-            {variant === 'collapsed' && (<img src={contract} alt="Collapse" />)}
+            {variant === 'collapsed' && (<img src={expand} alt="Expand" />)}
+            {variant === 'expanded' && (<img src={contract} alt="Collapse" />)}
             {variant === 'locked' && (<img src={lock} alt="Locked" />)}
         </div>
     </button>)
