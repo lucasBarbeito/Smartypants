@@ -8,7 +8,9 @@ module.exports = {
     },
     fontSize: {
       'title-small': ['14px', '20px'],
-      'headline-large': ['32px', '40px']
+      'headline-large': ['32px', '40px'],
+      'body-small': ['10px', '16px'],
+      'body-large': ['16px', '24px'],
     },
     colors: {
       'primary': {
