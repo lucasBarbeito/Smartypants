@@ -1,5 +1,6 @@
 import {ButtonHTMLAttributes} from 'react'
 import {cva, VariantProps} from "class-variance-authority";
+import "tailwindcss/tailwind.css";
 
 
 const buttonVariant = cva(['rounded-lg', 'w-full', 'justify-center', 'text-title-small', 'text-greyscale-500', 'py-2', 'w-1/2'],{
