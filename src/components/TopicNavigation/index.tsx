@@ -4,7 +4,6 @@ import Button from "../Button";
 const topicNavigationVariant = cva([
     'bg-primary-600',
     'w-full',
-    'py-2',
     'px-4',
     'flex',
     'justify-end',
