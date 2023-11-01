@@ -3,7 +3,7 @@ import {cva, VariantProps} from "class-variance-authority";
 import "tailwindcss/tailwind.css";
 
 
-const buttonVariant = cva(['rounded-lg', 'w-full', 'justify-center', 'text-title-small', 'text-greyscale-500', 'py-2', 'w-1/2'],{
+const buttonVariant = cva(['rounded-lg', 'justify-center', 'text-title-small', 'text-greyscale-500', 'py-2', 'w-1/2'],{
     variants:{
         variant:{
             primary:[
