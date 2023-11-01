@@ -7,20 +7,13 @@ const videoCardVariant = cva([])
 
 export interface VideoCardProps extends VariantProps<typeof videoCardVariant> {
     url: string;
-    username: string;
-    description: string;
-    song: string;
-    likes: number;
-    shares: number;
-    comments: number;
-    saves: number;
     // setVideoRef is a function
     setVideoRef: (ref: HTMLVideoElement | null) => void;
     autoplay: boolean;
 
 }
 
-const VideoCard = ({ url, username, description, song, likes, shares, comments, saves, setVideoRef, autoplay }:VideoCardProps) => {
+const VideoCard = ({ url, setVideoRef, autoplay }:VideoCardProps) => {
     const videoRef = useRef(null);
 
     useEffect(() => {
@@ -50,14 +43,14 @@ const VideoCard = ({ url, username, description, song, likes, shares, comments, 
                 ref={(ref) => {
                     // @ts-ignore
                     videoRef.current = ref;
-                    // setVideoRef(ref);
+                    setVideoRef(ref);
                 }}
                 loop
                 src={url}
             ></video>
             <div className="bottom-controls">
                 <div className="footer-right">
-                    <FooterRight likes={likes} shares={shares} comments={comments} saves={saves} />
+                    <FooterRight/>
                 </div>
             </div>
         </div>

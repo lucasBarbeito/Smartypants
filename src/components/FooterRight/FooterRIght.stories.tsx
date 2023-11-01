@@ -15,12 +15,5 @@ export default meta
 type Story = StoryObj<typeof FooterRight>
 
 export const Default: Story = {
-    render: (args) => (<FooterRight {...args}></FooterRight>
+    render: (args) => (<FooterRight></FooterRight>
 )}
-
-Default.args = {
-    likes: 1200,
-    comments: 1200,
-    saves: 1200,
-    shares: 1200,
-}

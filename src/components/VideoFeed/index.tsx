@@ -113,13 +113,6 @@ function VideoFeed() {
                 {videos.map((video, index) => (
                     <VideoCard
                         key={index}
-                        username={video.username}
-                        description={video.description}
-                        song={video.song}
-                        likes={video.likes}
-                        saves={video.saves}
-                        comments={video.comments}
-                        shares={video.shares}
                         url={video.url}
                         setVideoRef={handleVideoRef(index)}
                         autoplay={index === 0}
