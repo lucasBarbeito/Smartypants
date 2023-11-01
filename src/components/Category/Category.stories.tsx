@@ -24,7 +24,7 @@ export const Unselected: Story = {
 
 Unselected.args = {
     variant: 'unselected',
-    children: 'Unselected',
+    textName: 'Unselected',
 };
 
 export const Selected: Story = {
@@ -33,7 +33,5 @@ export const Selected: Story = {
 
 Selected.args = {
     variant: 'selected',
-    children: 'Selected'
+    textName: 'Selected'
 };
-
-

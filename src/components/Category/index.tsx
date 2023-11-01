@@ -1,8 +1,15 @@
-import {ButtonHTMLAttributes} from 'react'
 import {cva, VariantProps} from "class-variance-authority";
 
 
-const buttonVariant = cva(['rounded-lg', 'justify-center', 'text-title-small', 'text-greyscale-500', 'py-2', 'w-1/6'],{
+const buttonVariant = cva([
+    'rounded-lg',
+    'text-title-small',
+    'text-greyscale-500',
+    'py-2',
+    'px-2',
+    'inline',
+    'whitespace-no-wrap'
+],{
     variants:{
         variant:{
             selected:[
@@ -18,12 +25,12 @@ const buttonVariant = cva(['rounded-lg', 'justify-center', 'text-title-small', '
     }
 })
 
-export interface CategoryProps extends ButtonHTMLAttributes<HTMLButtonElement>, VariantProps<typeof buttonVariant>{
-
+export interface CategoryProps extends VariantProps<typeof buttonVariant>{
+    textName : string
 }
 
-const Category = ({variant, ...rest}:CategoryProps) => {
-    return <button className={buttonVariant({variant})} {...rest}/>
+const Category = ({variant, textName}:CategoryProps) => {
+    return <p className={buttonVariant({variant})}> {textName} </p>
 }
 
 export default Category
