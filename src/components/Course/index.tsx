@@ -26,6 +26,7 @@ const courseVariant = cva([
 })
 
 export interface CourseProps extends VariantProps<typeof courseVariant>{
+    id: number
     courseName: string,
     averageRating: number,
     totalRatings: string,
