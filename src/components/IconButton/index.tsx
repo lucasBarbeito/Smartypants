@@ -25,10 +25,11 @@ const iconButtonVariant = cva([
 
 export interface IconButtonProps extends VariantProps<typeof iconButtonVariant>{
     checked : boolean,
+    onClick?: () => void;
 }
 
-const IconButton = ({variant, checked}:IconButtonProps) => {
-    return (<button className={iconButtonVariant({variant})}>
+const IconButton = ({variant, checked, onClick}:IconButtonProps) => {
+    return (<button onClick={onClick} className={iconButtonVariant({variant})}>
             {variant === 'explore' && (<Explore checked={checked}/>)}
             {variant === 'home' && (<Home checked={checked}/>)}
             {variant === 'profile' && (<Profile checked={checked}/>)}

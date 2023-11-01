@@ -31,7 +31,7 @@ const TopicPage = () => {
                     <TopicNavigation leftButtonText="left" rightButtonText="right"/>
                 </div>
             </div>
-            <Footer/>
+            <Footer variant={'home'}/>
         </div>
     )
 }

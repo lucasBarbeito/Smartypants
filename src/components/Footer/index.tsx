@@ -1,3 +1,5 @@
+import React from "react";
+import {useState} from "react";
 import {cva, VariantProps} from "class-variance-authority";
 import IconButton from "../IconButton";
 
@@ -29,12 +31,24 @@ export interface FooterProps extends VariantProps<typeof footerVariant>{
 }
 
 const Footer = ({variant}:FooterProps) => {
+    const [selectedIcon, setSelectedIcon] = useState(variant)
+
+    const handleHomeIconClick = () => {
+        setSelectedIcon('home')
+    }
+    const handleExploreIconClick = () => {
+        setSelectedIcon('explore')
+    }
+    const handleProfileIconClick = () => {
+        setSelectedIcon('profile')
+    }
+
 
     return (
         <div className={footerVariant({variant})} >
-            <IconButton variant='home' checked={variant === 'home'}/>
-            <IconButton variant='explore' checked={variant === 'explore'}/>
-            <IconButton variant='profile' checked={variant === 'profile'}/>
+            <IconButton variant='home' onClick={handleHomeIconClick} checked={selectedIcon === 'home'}/>
+            <IconButton variant='explore' onClick={handleExploreIconClick} checked={selectedIcon === 'explore'}/>
+            <IconButton variant='profile' onClick={handleProfileIconClick} checked={selectedIcon === 'profile'}/>
         </div>)
 }
 
