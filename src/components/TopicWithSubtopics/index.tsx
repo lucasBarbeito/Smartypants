@@ -29,7 +29,7 @@ const TopicWithSubtopics = ({variant, topicName, subTopics = []}:TopicWithSubtop
     return (
        <div className={'bg-primary-600'}>
            <Topic topicName={topicName} totalSuptopicsCompleted={totalSuptopicsCompleted} totalSuptopics={totalSuptopics} variant={variant}/>
-           { subTopics.length > 0 && (
+           { (subTopics.length > 0 && variant === 'expanded') && (
                <div className={'flex flex-col px-4 py-2 gap-2'}>
                    {subTopics.map(subtopic => (
                        <Subtopic {...subtopic}></Subtopic>
