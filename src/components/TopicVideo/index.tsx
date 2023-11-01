@@ -11,26 +11,11 @@ const TopicVideo = () => {
     return (
         <div className="w-full h-48 md:h-64 lg:h-80 flex-shrink-0 rounded-lg no-scrollbar shadow-lg">
             <video className="w-full h-full object-cover rounded-lg" controls>
-                <source src="../../videos/video4.mp4" type="video/ogg"/>
+                <source src="https://media.geeksforgeeks.org/wp-content/uploads/20190616234019/Canvas.move_.mp4"  type="video/mp4"/>
                 Your browser does not support the video tag.
             </video>
         </div>
     )
 }
-{/*<iframe*/
-}
-{/*    className="w-full h-24 object-cover"*/
-}
-{/*    src="https://www.youtube.com/embed/dQw4w9WgXcQ"*/
-}
-{/*    title="YouTube video player"*/
-}
-{/*    frameBorder="0"*/
-}
-{/*    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"*/
-}
-{/*    allowFullScreen*/
-}
-{/*></iframe>*/
-}
+
 export default TopicVideo
