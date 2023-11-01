@@ -7,7 +7,6 @@ import media from "../../Media.svg"
 
 const courseVariant = cva([
     'text-greyscale-500',
-    'w-1/2',
     'truncate'
 ],{
     variants:{
@@ -18,10 +17,15 @@ const courseVariant = cva([
             'actionable-child':[],
             'course':[],
             'course-description':[],
+        },
+        size: {
+            half : ['w-1/2'],
+            full : ['w-full']
         }
     },
     defaultVariants:{
-        variant:'in-progress'
+        variant:'in-progress',
+        size : 'half'
     }
 })
 
@@ -33,10 +37,10 @@ export interface CourseProps extends VariantProps<typeof courseVariant>{
     description: string,
 }
 
-const Course = ({variant, courseName, averageRating, totalRatings, description}:CourseProps) => {
+const Course = ({variant, size, courseName, averageRating, totalRatings, description}:CourseProps) => {
     const borderRadius : string = variant === 'course' || variant === 'course-description' ? ' rounded-t-lg' : ''
     return (
-        <div className={courseVariant({variant})} >
+        <div className={courseVariant({variant, size})} >
             {( variant === 'in-progress' || variant === 'description' || variant === 'actionable' || variant === 'actionable-child') &&
                 (<ProgressBar variant={'top-rounded'} color={'bg-success'} completed={0}/>)
             }
