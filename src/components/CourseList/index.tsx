@@ -1,7 +1,5 @@
 import {cva, VariantProps} from "class-variance-authority";
 import Course, {CourseProps} from "../Course";
-import media from "../../Media.svg";
-import star from "../Icons/Star.svg";
 
 const coursListlVariant = cva([
 ],{
