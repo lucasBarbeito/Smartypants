@@ -14,7 +14,7 @@ const TopicPage = () => {
           <Header text={"Topic"}/>
           <div className="flex flex-col flex-1 px-4 gap-6 pt-2">
             <div className={'flex flex-col gap-2 py-2'}>
-              <ProgressBar color={"bg-success"} completed={86}/>
+              <ProgressBar color={"bg-success"} completed={56} totalTopics={100}/>
               <p className="text-greyscale-500 text-headline-medium font-montserrat">
                 Middle subtopic
               </p>

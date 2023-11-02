@@ -24,6 +24,8 @@ export const TopRounded: Story = {
 
 TopRounded.args = {
     variant: 'top-rounded',
+    completed: 56,
+    totalTopics: 100
 };
 
 export const Rounded: Story = {
@@ -32,5 +34,7 @@ export const Rounded: Story = {
 
 Rounded.args = {
     variant: 'rounded',
-    color: 'bg-secondary-500'
+    color: 'bg-secondary-500',
+    completed: 56,
+    totalTopics: 100
 };

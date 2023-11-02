@@ -42,7 +42,7 @@ const Course = ({variant, size, courseName, averageRating, totalRatings, descrip
     return (
         <div className={courseVariant({variant, size})} >
             {( variant === 'in-progress' || variant === 'description' || variant === 'actionable' || variant === 'actionable-child') &&
-                (<ProgressBar variant={'top-rounded'} color={'bg-success'} completed={0}/>)
+                (<ProgressBar variant={'top-rounded'} color={'bg-success'} completed={10} totalTopics={100}/>)
             }
             {( variant === 'in-progress' || variant === 'description' || variant === 'actionable' || variant === 'course' || variant === 'course-description') &&
                 (<img className={'flex self-stretch' + borderRadius} src={media} alt={"Media"}/>)
