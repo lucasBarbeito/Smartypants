@@ -7,7 +7,7 @@ const meta: Meta<typeof Course> ={
     tags: ['autodocs'],
     argTypes:{
         variant:{
-            options:['in-progress', 'description', 'actionable'],
+            options:['in-progress', 'description', 'actionable', 'actionable-child', 'course', 'course-description'],
             control:{type:'select'},
             defaultValue:'collapsed'
         }
