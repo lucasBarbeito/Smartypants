@@ -27,6 +27,8 @@ InProgress.args = {
     courseName: "How to React",
     averageRating: 4.5,
     totalRatings: "2K",
+    completed: 56,
+    totalTopics: 100
 };
 
 export const Description: Story = {
@@ -38,7 +40,9 @@ Description.args = {
     courseName: "How to React",
     averageRating: 4.5,
     totalRatings: "2K",
-    description: "Me not know me small brain"
+    description: "Me not know me small brain",
+    completed: 56,
+    totalTopics: 100
 };
 
 export const Actionable: Story = {
@@ -50,7 +54,9 @@ Actionable.args = {
     courseName: "How to React",
     averageRating: 4.5,
     totalRatings: "2K",
-    description: "Me not know me small brain"
+    description: "Me not know me small brain",
+    completed: 56,
+    totalTopics: 100
 };
 
 export const ActionableChild: Story = {
@@ -62,7 +68,9 @@ ActionableChild.args = {
     courseName: "How to React",
     averageRating: 4.5,
     totalRatings: "2K",
-    description: "Me not know me small brain"
+    description: "Me not know me small brain",
+    completed: 56,
+    totalTopics: 100
 };
 
 export const NotStartedCourse: Story = {

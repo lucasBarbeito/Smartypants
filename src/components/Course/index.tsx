@@ -35,14 +35,17 @@ export interface CourseProps extends VariantProps<typeof courseVariant>{
     averageRating: number,
     totalRatings: string,
     description: string,
+    completed: number,
+    totalTopics: number,
+
 }
 
-const Course = ({variant, size, courseName, averageRating, totalRatings, description}:CourseProps) => {
+const Course = ({variant, size, courseName, averageRating, totalRatings, description, completed, totalTopics}:CourseProps) => {
     const borderRadius : string = variant === 'course' || variant === 'course-description' ? ' rounded-t-lg' : ''
     return (
         <div className={courseVariant({variant, size})} >
             {( variant === 'in-progress' || variant === 'description' || variant === 'actionable' || variant === 'actionable-child') &&
-                (<ProgressBar variant={'top-rounded'} color={'bg-success'} completed={10} totalTopics={100}/>)
+                (<ProgressBar variant={'top-rounded'} color={'bg-success'} completed={completed} totalTopics={totalTopics}/>)
             }
             {( variant === 'in-progress' || variant === 'description' || variant === 'actionable' || variant === 'course' || variant === 'course-description') &&
                 (<img className={'flex self-stretch' + borderRadius} src={media} alt={"Media"}/>)
