@@ -30,21 +30,27 @@ InProgress.args = {
             courseName: "Be stronk",
             averageRating: 4.7,
             totalRatings: "1M",
-            description: "How to be strong and resilient."
+            description: "How to be strong and resilient.",
+            completed: 69,
+            totalTopics: 100
         },
         {
             id:2,
             courseName: "Learn Coding",
             averageRating: 4.9,
             totalRatings: "500K",
-            description: "A comprehensive coding course for beginners."
+            description: "A comprehensive coding course for beginners.",
+            completed: 42,
+            totalTopics: 100
         },
         {
             id:3,
             courseName: "Cooking Mastery",
             averageRating: 4.5,
             totalRatings: "750K",
-            description: "Master the art of cooking with our expert chefs."
+            description: "Master the art of cooking with our expert chefs.",
+            completed: 15,
+            totalTopics: 100
         }
     ]
 };
@@ -62,21 +68,27 @@ Category.args = {
             courseName: "Be stronk",
             averageRating: 4.7,
             totalRatings: "1M",
-            description: "How to be strong and resilient."
+            description: "How to be strong and resilient.",
+            completed: 0,
+            totalTopics: 0
         },
         {
             id:2,
             courseName: "Learn Coding",
             averageRating: 4.9,
             totalRatings: "500K",
-            description: "A comprehensive coding course for beginners."
+            description: "A comprehensive coding course for beginners.",
+            completed: 0,
+            totalTopics: 0
         },
         {
             id:3,
             courseName: "Cooking Mastery",
             averageRating: 4.5,
             totalRatings: "750K",
-            description: "Master the art of cooking with our expert chefs."
+            description: "Master the art of cooking with our expert chefs.",
+            completed: 0,
+            totalTopics: 0
         }
     ]
 };
